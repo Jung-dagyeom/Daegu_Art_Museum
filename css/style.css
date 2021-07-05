@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+
+/* -----basic colors ----- */
+    --hue-color: 30;
+    --primary-color: hsl(var(--hue-color), 69%, 46%);
+    --white-color: #fff;
+    --black-color: hsl(var(--hue-color), 8%, 15%);
+    --body-color: hsl(var(--hue-color), 19%, 62%);
+}
+/* ----- layout ----- */
+.inner {
+    min-width: 340px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.header {
+    position: relative;
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+.header .logo {
+    height: 110px;
+}
+.header .logo a {
+    display: inline-block;
+    margin-top: 34px;
+}
+.nav__container {
+    padding-top: 16px;
+}
+.nav__menu {
+    justify-content: space-between;
+}
+.nav__item a {
+    font-size: 1.1rem;
+    font-weight: bold;
